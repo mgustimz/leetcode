@@ -11,4 +11,9 @@ public class ReverseInteger {
             return 0;
         }
     }
+
+    private ReverseInteger() {
+        throw new IllegalStateException("Utility class");
+    }
+
 }
