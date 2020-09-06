@@ -19,11 +19,11 @@ public class PalindromeNumber {
     public static boolean isPalindromeBest(int x) {
         int reversed = 0;
         int original = x;
-        int digit = 0;
+        int digit;
         while (x >= 1) {
             digit = x % 10;
             x /= 10;
-            reversed = reversed*10 + digit;
+            reversed = reversed * 10 + digit;
         }
         return original == reversed;
     }
