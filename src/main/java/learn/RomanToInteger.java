@@ -8,7 +8,7 @@ public class RomanToInteger {
 
     public static int romanToInt(String s) {
         int result = 0;
-        char[] ch = s.toCharArray();
+        char[] ch = s.toUpperCase().toCharArray();
         for (int i = 0; i < ch.length; i++) {
             if (ch[i] == 'I') {
                 if (i + 1 < ch.length) {
